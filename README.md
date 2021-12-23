@@ -1,4 +1,4 @@
-Some blurb
+A simple TypeScript template for PlayCanvas that can also sync with your playcanvas.com project
 
 ## Quick start
 
