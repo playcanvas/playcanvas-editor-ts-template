@@ -1,16 +1,37 @@
 {
-  "name": "simple-tsc",
+  "name": "playcanvas-com-typescript-template",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "author": "PlayCanvas <support@playcanvas.com>",
+  "homepage": "https://playcanvas.com",
+  "description": "A simple TypeScript template for PlayCanvas that can also sync with your playcanvas.com project",
+  "keywords": [
+    "typescript",
+    "3D",
+    "2D",
+    "VR",
+    "WebGL",
+    "WebGL2",
+    "game",
+    "engine",
+    "HTML5",
+    "browser",
+    "typings"
+  ],
+  "main": "build/main.bundle.js",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "tsc --watch",
+    "push": "node node_modules/playcanvas-sync/pcsync.js pushAll --yes",
+    "build-push": "tsc; node node_modules/playcanvas-sync/pcsync.js pushAll --yes",
+    "watch-push": "tsc-watch --onSuccess 'node node_modules/playcanvas-sync/pcsync.js pushAll --yes'"
   },
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "playcanvas": "^1.51.4",
+    "playcanvas-sync": "git+https://github.com/playcanvas/playcanvas-sync.git",
     "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "tsc-watch": "^4.6.0"
   }
 }

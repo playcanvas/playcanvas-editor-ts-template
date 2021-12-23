@@ -1,0 +1,8 @@
+{
+    "PLAYCANVAS_API_KEY": "",
+    "PLAYCANVAS_BRANCH_ID": "",
+    "PLAYCANVAS_PROJECT_ID": 1,
+    "PLAYCANVAS_BAD_FILE_REG": "^\\.|\\.pcconfig",
+    "PLAYCANVAS_BAD_FOLDER_REG": "^\\.|typings|node_modules",
+    "PLAYCANVAS_TARGET_DIR": "./build"
+}
