@@ -11,7 +11,7 @@ Some blurb
 4. On the command line, run the npm script `npm run watch-push`
 5. This will compile your scripts in `src` folder on saved changes into `build/main.bundle.js` and upload to your playcanvas.com project
 `
-## npm scripts`
+## npm scripts
 | Command                | Description                                                             |
 |------------------------|-------------------------------------------------------------------------|
 | `npm run build`        | Compiles tsc files and builds to `build/main.bundle.js`                 |
