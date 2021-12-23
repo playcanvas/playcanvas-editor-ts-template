@@ -1,0 +1,16 @@
+{
+  "name": "simple-tsc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "playcanvas": "^1.51.4",
+    "typescript": "^4.5.4"
+  }
+}
