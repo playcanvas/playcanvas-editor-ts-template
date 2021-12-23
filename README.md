@@ -10,7 +10,6 @@ Some blurb
     - `PLAYCANVAS_BRANCH_ID`
 4. On the command line, run the npm script `npm run watch-push`
 5. This will compile your scripts in `src` folder on saved changes into `build/main.bundle.js` and upload to your playcanvas.com project
-`
 ## npm scripts
 | Command                | Description                                                             |
 |------------------------|-------------------------------------------------------------------------|
