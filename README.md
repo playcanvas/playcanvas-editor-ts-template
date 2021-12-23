@@ -10,6 +10,9 @@ A simple TypeScript template for PlayCanvas that can also sync with your playcan
     - `PLAYCANVAS_BRANCH_ID`
 4. On the command line, run the npm script `npm run watch-push`
 5. This will compile your scripts in `src` folder on saved changes into `build/main.bundle.js` and upload to your playcanvas.com project
+
+Please note, if you are adding new `pc.ScriptTypes` or attributes to existing ones, you will need to manually parse the script after upload in the PlayCanvas Editor. [Please read this][playcanvas-sync-new-script-types] for more details.
+
 ## npm scripts
 | Command                | Description                                                             |
 |------------------------|-------------------------------------------------------------------------|
@@ -21,3 +24,4 @@ A simple TypeScript template for PlayCanvas that can also sync with your playcan
 
 
 [playcanvas-sync-pcconfig-instructions]: https://github.com/playcanvas/playcanvas-sync#config-variables
+[playcanvas-sync-new-script-types]: https://github.com/playcanvas/playcanvas-sync#adding-new-files-as-script-components
