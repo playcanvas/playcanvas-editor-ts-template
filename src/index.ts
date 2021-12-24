@@ -1,4 +1,6 @@
 class HelloWorld extends pc.ScriptType {
+    text: string;
+
     initialize() {
         console.log('Hello ' + this.text);
     }
@@ -6,7 +8,3 @@ class HelloWorld extends pc.ScriptType {
 
 pc.registerScript(HelloWorld, 'helloWorld');
 HelloWorld.attributes.add('text', {type: 'string'});
-
-interface HelloWorld {
-    text: string;
-}
