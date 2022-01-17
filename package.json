@@ -23,7 +23,7 @@
     "watch": "tsc --watch",
     "push": "node node_modules/playcanvas-sync/pcsync.js pushAll --yes",
     "build-push": "tsc; node node_modules/playcanvas-sync/pcsync.js pushAll --yes",
-    "watch-push": "tsc-watch --onSuccess 'node node_modules/playcanvas-sync/pcsync.js pushAll --yes'"
+    "watch-push": "tsc; tsc-watch --onSuccess 'node node_modules/playcanvas-sync/pcsync.js pushAll --yes'"
   },
   "license": "MIT",
   "devDependencies": {

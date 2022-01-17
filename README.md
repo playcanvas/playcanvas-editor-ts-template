@@ -2,10 +2,10 @@ A simple TypeScript template for PlayCanvas that can also sync with your playcan
 
 ## Quick start
 
-This template uses the [playcanvas-sync][playcanvas-sync] tool to push files to your PlayCanvas project and requires a little bit of setup.
+This template uses the [playcanvas-sync][playcanvas-sync] tool to push files to your PlayCanvas project and requires a little bit of setup with `.pcconfig` and `pcconfig.json`.
 
-1. Copy `.pcconfig` to your home directory (Mac: `/Users/<username>`, Windows: `C:/User/<username>`). `.pcconfig` has been preconfigured to use the current working directory as the target directory ([more information here][playcanvas-sync-pcconfig-instructions]).
-2. Make a copy of `pcconfig.template.json` and rename to `pcconfig.json`.
+1. Copy `.pcconfig` to your home directory (Mac: `/Users/<username>`, Windows: `C:/User/<username>`). `.pcconfig` has been preconfigured to look for a config file in the current working directory which will be this project's folder ([more information here][playcanvas-sync-pcconfig-instructions]).
+2. Make a copy of `pcconfig.template.json` and rename to `pcconfig.json`. This is needed to configure playcanvas-sync to upload the file to correct PlayCanvas Editor project.
 3. Complete/Update the following properties in `pcconfig.json` using these [instructions][playcanvas-sync-pcconfig-instructions]:
     - `PLAYCANVAS_API_KEY` - [Instructions to create an API key][create-api-key]
     - `PLAYCANVAS_PROJECT_ID` - [Where to find the project ID][find-project-id]
