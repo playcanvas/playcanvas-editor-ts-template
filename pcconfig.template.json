@@ -4,5 +4,5 @@
     "PLAYCANVAS_PROJECT_ID": 1,
     "PLAYCANVAS_BAD_FILE_REG": "^\\.|~$",
     "PLAYCANVAS_BAD_FOLDER_REG": "^\\.|typings|node_modules",
-    "PLAYCANVAS_TARGET_DIR": "./build"
+    "PLAYCANVAS_TARGET_SUBDIR": "build"
 }
