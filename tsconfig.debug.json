@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "amd",
+    "lib": [
+      "DOM",
+      "ES2017"
+    ],
+    "outFile": "./build/main.build.js",
+    "rootDir": "./src",               
+    "strict": true, 
+    "strictPropertyInitialization": false,
+    "types": [
+      "playcanvas"
+    ],
+    "esModuleInterop": true, 
+    "inlineSourceMap": true, 
+    "inlineSources": true,   
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

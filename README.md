@@ -17,13 +17,17 @@ This template uses the [playcanvas-sync][playcanvas-sync] tool to push files to 
 Please note, if you are adding new `pc.ScriptTypes` or attributes to existing ones, you will need to manually parse the script after upload in the PlayCanvas Editor. [Please read this][playcanvas-sync-new-script-types] for more details.
 
 ## npm scripts
-| Command                | Description                                                             |
-|------------------------|-------------------------------------------------------------------------|
-| `npm run build`        | Compiles tsc files and builds to `build/main.bundle.js`                 |
-| `npm run watch`        | Compiles tsc files on code changes and builds to `build/main.bundle.js` |
-| `npm run push`         | Uploads `build/main.bundle.js` to playcanvas.com project                |
-| `npm run build-push`   | Performs `build` and `push` npm scripts                                 |
-| `npm run watch-push`   | Performs `watch` and `push` npm scripts                                 |
+| Command                      | Description                                                                                  |
+|------------------------------|----------------------------------------------------------------------------------------------|
+| `npm run build:debug`        | Compiles tsc files using debug config and builds to `build/main.bundle.js`                   |
+| `npm run build:release`      | Compiles tsc files using release config and builds to `build/main.bundle.js`                 |
+| `npm run watch:debug`        | Compiles tsc files using debug config on code changes and builds to `build/main.bundle.js`   |
+| `npm run watch:release`      | Compiles tsc files using release config on code changes and builds to `build/main.bundle.js` |
+| `npm run push`               | Uploads `build/main.bundle.js` to playcanvas.com project                                     |
+| `npm run build-push:debug`   | Performs `build:debug` and `push` npm scripts                                                |
+| `npm run build-push:release` | Performs `build:release` and `push` npm scripts                                              |
+| `npm run watch-push:debug`   | Performs `watch:debug` and `push` npm scripts                                                |
+| `npm run watch-push:release` | Performs `watch:release` and `push` npm scripts                                              |
 
 [playcanvas-sync]: https://github.com/playcanvas/playcanvas-sync
 [playcanvas-sync-pcconfig-instructions]: https://github.com/playcanvas/playcanvas-sync#config-variables

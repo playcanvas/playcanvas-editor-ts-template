@@ -1,6 +1,6 @@
 {
   "name": "playcanvas-editor-ts-template",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "PlayCanvas <support@playcanvas.com>",
   "homepage": "https://playcanvas.com",
   "description": "A simple TypeScript template for PlayCanvas that can also sync with your playcanvas.com project",
@@ -19,19 +19,23 @@
   ],
   "main": "build/main.bundle.js",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc --watch",
+    "build:debug": "tsc --project tsconfig.debug.json",
+    "build:release": "tsc --project tsconfig.release.json",
+    "watch:debug": "tsc --watch --project tsconfig.debug.json",
+    "watch:release": "tsc --watch --project tsconfig.release.json",
     "push": "node node_modules/playcanvas-sync/pcsync.js pushAll --yes",
-    "build-push": "tsc && node node_modules/playcanvas-sync/pcsync.js pushAll --yes",
-    "watch-push": "tsc && tsc-watch --onSuccess \"node node_modules/playcanvas-sync/pcsync.js pushAll --yes\""
+    "build-push:debug": "npm run build:debug && npm run push",
+    "build-push:release": "npm run build:release && npm run push",
+    "watch-push:debug": "npm run build:debug && tsc-watch -p tsconfig.debug.json --onSuccess \"npm run push\"",
+    "watch-push:release": "npm run build:release && tsc-watch -p tsconfig.release.json --onSuccess \"npm run push\""
   },
   "license": "MIT",
   "devDependencies": {
-    "playcanvas": "^1.51.4",
+    "playcanvas": "^1.55.4",
     "playcanvas-sync": "git+https://github.com/playcanvas/playcanvas-sync.git",
-    "typescript": "^4.5.4"
+    "typescript": "^4.7.4"
   },
   "dependencies": {
-    "tsc-watch": "^4.6.0"
+    "tsc-watch": "^5.0.3"
   }
 }
