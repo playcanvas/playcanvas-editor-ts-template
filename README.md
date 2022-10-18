@@ -11,7 +11,7 @@ This template uses the [playcanvas-sync][playcanvas-sync] tool to push files to 
     - `PLAYCANVAS_PROJECT_ID` - [Where to find the project ID][find-project-id]
     - `PLAYCANVAS_BRANCH_ID` [Where to find the branch ID][find-branch-id]
 4. On the command line, run `npm install` to install the packages.
-5. On the command line, run the npm script `npm run watch-push`.
+5. On the command line, run the npm script `npm run watch-push:debug`.
 6. This will watch the `src` folder for changes, compile into `build/main.bundle.js` and if successful, upload to your playcanvas.com project.
 
 Please note, if you are adding new `pc.ScriptTypes` or attributes to existing ones, you will need to manually parse the script after upload in the PlayCanvas Editor. [Please read this][playcanvas-sync-new-script-types] for more details.
