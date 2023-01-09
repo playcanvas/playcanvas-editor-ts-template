@@ -4,7 +4,6 @@ class HelloWorld extends pc.ScriptType {
 
     initialize() {
         console.log('Hello ' + this.text);
-        console.log('Hello entity' + this.entityLink) // autocompletes fine
     }
 };
 
