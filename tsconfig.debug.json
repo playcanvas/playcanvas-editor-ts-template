@@ -13,6 +13,7 @@
     "types": [
       "playcanvas"
     ],
+    "typeRoots": ["./types/"],
     "esModuleInterop": true, 
     "inlineSourceMap": true, 
     "inlineSources": true,   
