@@ -1,6 +1,6 @@
 class HelloWorld extends pc.ScriptType {
     text: string;
-    entityLink : pc.Entity;
+    entityLink : pc.Entity | null;
 
     initialize() {
         console.log('Hello ' + this.text);
