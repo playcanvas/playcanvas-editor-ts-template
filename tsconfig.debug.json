@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "ES5",
     "module": "amd",
+    "moduleResolution": "node",
     "lib": [
       "DOM",
       "ES2017"
@@ -10,10 +11,6 @@
     "rootDir": "./src",               
     "strict": true, 
     "strictPropertyInitialization": false,
-    "types": [
-      "playcanvas"
-    ],
-    "typeRoots": ["./types/"],
     "esModuleInterop": true, 
     "inlineSourceMap": true, 
     "inlineSources": true,   

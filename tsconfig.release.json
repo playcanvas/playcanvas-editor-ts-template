@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "ES5",
     "module": "amd",
+    "moduleResolution": "node",
     "lib": [
       "DOM",
       "ES2017"
@@ -10,9 +11,6 @@
     "rootDir": "./src",                
     "strict": true, 
     "strictPropertyInitialization": false, 
-    "types": [
-      "playcanvas"
-    ],
     "esModuleInterop": true,
     "experimentalDecorators": true, 
     "forceConsistentCasingInFileNames": true

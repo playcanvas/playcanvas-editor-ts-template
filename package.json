@@ -31,11 +31,12 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "playcanvas": "^1.59.0",
+    "@types/webxr": "^0.5.5",
+    "playcanvas": "^1.66.1",
     "playcanvas-sync": "git+https://github.com/playcanvas/playcanvas-sync.git",
-    "typescript": "^4.9.4"
+    "typescript": "^5.2.2"
   },
   "dependencies": {
-    "tsc-watch": "^5.0.3"
+    "tsc-watch": "^6.0.4"
   }
 }
