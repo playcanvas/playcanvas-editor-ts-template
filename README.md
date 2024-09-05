@@ -1,4 +1,4 @@
-A simple TypeScript template for PlayCanvas that can also sync with your playcanvas.com project
+A simple TypeScript template for PlayCanvas that can also sync with your playcanvas.com project.
 
 ## Quick start
 
@@ -17,6 +17,7 @@ This template uses the [playcanvas-sync][playcanvas-sync] tool to push files to 
 Please note, if you are adding new `pc.ScriptTypes` or attributes to existing ones, you will need to manually parse the script after upload in the PlayCanvas Editor. [Please read this][playcanvas-sync-new-script-types] for more details.
 
 ## npm scripts
+
 | Command                      | Description                                                                                  |
 |------------------------------|----------------------------------------------------------------------------------------------|
 | `npm run build:debug`        | Compiles tsc files using debug config and builds to `build/main.bundle.js`                   |
@@ -32,6 +33,6 @@ Please note, if you are adding new `pc.ScriptTypes` or attributes to existing on
 [playcanvas-sync]: https://github.com/playcanvas/playcanvas-sync
 [playcanvas-sync-pcconfig-instructions]: https://github.com/playcanvas/playcanvas-sync#config-variables
 [playcanvas-sync-new-script-types]: https://github.com/playcanvas/playcanvas-sync#adding-new-files-as-script-components
-[create-api-key]: https://developer.playcanvas.com/en/user-manual/api/#authorization
-[find-project-id]: https://developer.playcanvas.com/en/user-manual/api/#project_id
-[find-branch-id]: https://developer.playcanvas.com/en/user-manual/api/#branch_id
+[create-api-key]: https://developer.playcanvas.com/user-manual/api/#authorization
+[find-project-id]: https://developer.playcanvas.com/user-manual/api/#project_id
+[find-branch-id]: https://developer.playcanvas.com/user-manual/api/#branch_id
