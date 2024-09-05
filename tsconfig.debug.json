@@ -8,12 +8,13 @@
       "ES2017"
     ],
     "outFile": "./build/main.build.js",
-    "rootDir": "./src",               
-    "strict": true, 
+    "rootDir": "./src",
+    "strict": true,
     "strictPropertyInitialization": false,
-    "esModuleInterop": true, 
-    "inlineSourceMap": true, 
-    "inlineSources": true,   
+    "types": ["playcanvas", "webxr"],
+    "esModuleInterop": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true
   }
