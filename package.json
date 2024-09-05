@@ -23,7 +23,7 @@
     "build:release": "tsc --project tsconfig.release.json",
     "watch:debug": "tsc --watch --project tsconfig.debug.json",
     "watch:release": "tsc --watch --project tsconfig.release.json",
-    "push": "node node_modules/playcanvas-sync/pcsync.js pushAll --yes",
+    "push": "node node_modules/playcanvas-sync/bin/pcsync.js pushAll --yes",
     "build-push:debug": "npm run build:debug && npm run push",
     "build-push:release": "npm run build:release && npm run push",
     "watch-push:debug": "npm run build:debug && tsc-watch -p tsconfig.debug.json --onSuccess \"npm run push\"",
